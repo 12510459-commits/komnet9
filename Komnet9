@@ -1,0 +1,28 @@
+
+def tampilkan_kelompok():
+    # Informasi Kelompok
+    nama_kelompok = "Kelompok 9"
+    projek = "Komnet"
+    
+    # Daftar Anggota (Nama dan Peran/NIM)
+    anggota = [
+        {"nama": "Kalangi, Farrell Gracello"},
+        {"nama": "Sandag, Anugrah"},
+        {"nama": "Anaitan, Praylton"},
+        {"nama": "Wando, Chelsia"}
+    ]
+
+    print("="*30)
+    print(f"KELOMPOK: {nama_kelompok}")
+    print(f"PROJEK  : {projek}")
+    print("="*30)
+    
+    print("Daftar Anggota:")
+    for i, person in enumerate(anggota, 1):
+        print(f"{i}. {person['nama']}")
+    
+    print("="*30)
+
+# Menjalankan fungsi
+if __name__ == "__main__":
+    tampilkan_kelompok()
